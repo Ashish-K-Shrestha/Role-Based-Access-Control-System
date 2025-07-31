@@ -40,10 +40,10 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
-const store = new MongoDBStore({
-  uri: process.env.MONGO_URI,
-  collection: "sessions",
-});
+// const store = new MongoDBStore({
+//   uri: process.env.MONGO_URI,
+//   collection: "sessions",
+// });
 
 store.on("error", function (error) {
   console.log("There is err storing session: ", error);
