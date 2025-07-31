@@ -36,10 +36,10 @@ passport.use(
 );
 
 //this authenticates using google strategy and get user profile and email in return
-googleRouter.get(
-  "/",
-  passport.authenticate("google", { scope: ["profile", "email"] })
-);
+// googleRouter.get(
+//   "/",
+//   passport.authenticate("google", { scope: ["profile", "email"] })
+// );
 
 //redirect url after google authentication
 googleRouter.get(
