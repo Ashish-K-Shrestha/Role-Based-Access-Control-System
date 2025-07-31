@@ -64,17 +64,17 @@ const routes = [
     secondary: true,
   },
   {
-    name: 'Permissions',
-    layout: '/admin',
-    path: '/permissions-list',
-    icon: (
-      <Icon
-        as={MdKey}
-        width="20px"
-        height="20px"
-        color="inherit"
-      />
-    ),
+    // name: 'Permissions',
+    // layout: '/admin',
+    // path: '/permissions-list',
+    // icon: (
+    //   <Icon
+    //     as={MdKey}
+    //     width="20px"
+    //     height="20px"
+    //     color="inherit"
+    //   />
+    // ),
     component: <PermissionsList />,
     secondary: true,
   },
