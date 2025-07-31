@@ -55,18 +55,18 @@ export const getRolesList = async (forceRefresh = false) => {
  * get the log list from localStorage if present
  * else fetch from server
  */
-// export const getLogList = async () => {
-//   let logList = localStorage.getItem('logList');
+export const getLogList = async () => {
+  let logList = localStorage.getItem('logList');
 
-//   if (logList) {
-//     return JSON.parse(logList);
-//   } else {
-//     const response = await fetch(`${server_url}/api/log`);
-//     const data = await response.json();
-//     localStorage.setItem('logList', JSON.stringify(data));
-//     return data;
-//   }
-// };
+  if (logList) {
+    return JSON.parse(logList);
+  } else {
+    const response = await fetch(`${server_url}/api/log`);
+    const data = await response.json();
+    localStorage.setItem('logList', JSON.stringify(data));
+    return data;
+  }
+};
 
 /**
  * This method get logged user from localStorage if present
