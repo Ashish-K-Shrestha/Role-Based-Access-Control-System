@@ -54,8 +54,8 @@ githubRouter.get(
 );
 
 //handles failed authentication from github
-// githubRouter.get("/fail", (req, res) => {
-//   res.status(401).json({ message: "Authentication failed with github" });
-// });
+githubRouter.get("/fail", (req, res) => {
+  res.status(401).json({ message: "Authentication failed with github" });
+});
 
 module.exports = githubRouter;
