@@ -5,14 +5,14 @@ const findOrCreate = require('mongoose-findorcreate');
 const Schema = mongoose.Schema;
 
 // Create a schema to define the structure of the role data
-// const RoleSchema = new Schema({
-//     name: {
-//         type:String,
-//         unique:true
-//     },
-//     description: String,
-//     permissions: [String]
-// });
+const RoleSchema = new Schema({
+    name: {
+        type:String,
+        unique:true
+    },
+    description: String,
+    permissions: [String]
+});
 
 //find or create role
 RoleSchema.plugin(findOrCreate);
