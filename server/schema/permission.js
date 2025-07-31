@@ -5,13 +5,13 @@ const findOrCreate = require('mongoose-findorcreate');
 const Schema = mongoose.Schema;
 
 // Create a schema to define the structure of the permission data
-const permissionSchema = new Schema({
-    name: {
-        type:String,
-        unique: true
-    },
-    description: String
-});
+// const permissionSchema = new Schema({
+//     name: {
+//         type:String,
+//         unique: true
+//     },
+//     description: String
+// });
 
 // find or create permission
 permissionSchema.plugin(findOrCreate);
