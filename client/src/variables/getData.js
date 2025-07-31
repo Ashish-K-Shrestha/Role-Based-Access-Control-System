@@ -72,17 +72,17 @@ export const getLogList = async () => {
  * This method get logged user from localStorage if present
  * else fetch server
  */
-export const getUser = async () => {
-  let user = localStorage.getItem('user');
+// export const getUser = async () => {
+//   let user = localStorage.getItem('user');
 
-  if (user) {
-    return JSON.parse(user);
-  } else {
-    const response = await fetch(`${server_url}/api/user`);
-    console.log('body', await response.json());
-    // const data = await repon
-  }
-};
+//   if (user) {
+//     return JSON.parse(user);
+//   } else {
+//     const response = await fetch(`${server_url}/api/user`);
+//     console.log('body', await response.json());
+//     // const data = await repon
+//   }
+// };
 
 export const getCount = async () => {
   let count = localStorage.getItem('count');
