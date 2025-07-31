@@ -64,8 +64,8 @@ app.use(
   })
 );
 
-// app.use(passport.initialize());
-// app.use(passport.session());
+app.use(passport.initialize());
+app.use(passport.session());
 
 const User = require("./schema/user");
 passport.serializeUser((user, done) => done(null, user.id));
