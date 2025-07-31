@@ -50,13 +50,13 @@ userRouter.post("/add", async (req, res) => {
         }
 
         // Create a new user object
-        // const newUser = new User({
-        //     name,
-        //     email,
-        //     role,
-        //     permissions,
-        //     provider: "admin-panel"
-        // });
+        const newUser = new User({
+            name,
+            email,
+            role,
+            permissions,
+            provider: "admin-panel"
+        });
 
         // Register the user and hash the password
         User.register(newUser, password, async (err, registeredUser) => {
